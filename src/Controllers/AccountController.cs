@@ -19,7 +19,7 @@ namespace Miniblog.Core.Controllers
             _userServices = userServices;
         }
 
-
+        [Route("/blog/login")]
         [Route("/login")]
         [AllowAnonymous]
         [HttpGet]
@@ -29,6 +29,7 @@ namespace Miniblog.Core.Controllers
             return View();
         }
 
+        [Route("/blog/login")]
         [Route("/login")]
         [HttpPost, AllowAnonymous, ValidateAntiForgeryToken]
         public async Task<IActionResult> LoginAsync(string returnUrl, LoginViewModel model)
@@ -51,6 +52,7 @@ namespace Miniblog.Core.Controllers
             return View("Login", model);
         }
 
+        [Route("/blog/logout")]
         [Route("/logout")]
         public async Task<IActionResult> LogOutAsync()
         {

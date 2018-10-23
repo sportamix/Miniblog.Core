@@ -1,7 +1,7 @@
 {
-  "name": "Miniblog.Core",
-  "short_name": "Miniblog.Core",
-  "description": "A short description of the blog.",
+  "name": "Sportamix.Blog",
+  "short_name": "Sportamix",
+  "description": "Sportamix - sports networking platform.",
   "icons": [
     {
       "src": "/img/icon192x192.png",
